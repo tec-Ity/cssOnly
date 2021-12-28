@@ -3,9 +3,15 @@
 ### barBottom2 	底部导航栏 小球滚动效果
 ### barBottom3 	底部导航栏 不同灯光效果
 ### barLeft 	侧边栏（左边）
+### Nav_center 	导航栏中间旋转
 
-## b 常用效果
+## b 常用动态效果
+### btn_cancel	取消按钮的转换
+### btn_switch	按钮的开关
+
+## c 常用静态效果
 ### keyboard	键盘按钮（虚拟键盘用）
+### logo_drop	商标的水滴效果
 ### ribbon 		条纹（标签 或 折扣 用）
 ### zigzag 		之字边（上下边 小票用）
 
