@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>barBottom 1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <i class="icon">
+                        <i class='bx bx-home-circle'></i>
+                    </i>
+                    <span class="icon"></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <i class="icon">
+                        <i class='bx bx-user' ></i>
+                    </i>
+                    <span class="icon"></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <i class="icon">
+                        <i class='bx bx-chat'></i>
+                    </i>
+                    <span class="icon"></span>
+                    <span class="text">Messages</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <i class="icon">
+                        <i class='bx bx-camera' ></i>
+                    </i>
+                    <span class="icon"></span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <i class="icon">
+                        <i class='bx bx-cog' ></i>
+                    </i>
+                    <span class="icon"></span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('active') );
+            this.classList.add('active');
+        }
+        list.forEach(item => item.addEventListener('click', activeLink));
+    </script>
+</body>
+</html>
