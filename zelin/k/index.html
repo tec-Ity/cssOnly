@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wavy Banner Parallax Effects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+
+    </section>
+    <div class="sec">
+        <h2>Animated Parallax Water Wave Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem consequatur, amet optio possimus eveniet sunt, totam earum nobis odit quod vitae atque, esse tempore velit odio voluptate nostrum eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi nulla porro quos. Commodi eaque tempore sit iusto quis molestias explicabo, quas doloribus, cum modi maxime dolorum vitae vero. Minus.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem consequatur, amet optio possimus eveniet sunt, totam earum nobis odit quod vitae atque, esse tempore velit odio voluptate nostrum eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi nulla porro quos. Commodi eaque tempore sit iusto quis molestias explicabo, quas doloribus, cum modi maxime dolorum vitae vero. Minus.</p>
+    </div>
+
+    <script>
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+            wave2.style.backgroundPositionX = 300 + value * -4  + 'px';
+            wave3.style.backgroundPositionX = 200 + value * 2  + 'px';
+            wave4.style.backgroundPositionX = 100 + value * -2  + 'px';
+        })
+    </script>
+</body>
+</html>
