@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScrollTrigger Parallax Header Effects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg (1)(1).jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="man(1).png" id="man">
+        <img src="clouds_1(1).png" id="clouds_1">
+        <img src="clouds_2(1).png" id="clouds_2">
+        <img src="mountain_left(1).png" id="mountain_left">
+        <img src="mountain_right(1).png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>ScrollTrigger is Awesome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur quasi dolore incidunt doloremque minus aperiam voluptas, magni voluptates nesciunt porro, harum ipsum saepe aspernatur dolor, adipisci animi. Atque, nobis!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste delectus, ad nostrum vero veniam molestiae dolorem voluptatem, velit non distinctio, excepturi dicta modi dolor ut. Nisi voluptatum blanditiis eius possimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum rerum voluptates consequuntur et tempora officiis suscipit odit similique alias aliquam excepturi libero, temporibus dolores maxime neque sint culpa tempore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut debitis odio nam distinctio modi sed perspiciatis explicabo id nisi tenetur cumque et dolores, obcaecati dolorem voluptatum ullam accusamus praesentium tempora.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illo autem delectus nemo assumenda? Rerum, nesciunt a! Expedita, consequuntur minima ipsa facere dolor iure sequi id beatae autem, ut nostrum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt est voluptates, maxime deleniti, dignissimos explicabo asperiores quos, ea animi impedit! Iste quasi recusandae, aut nesciunt in dicta quibusdam nam?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur officia soluta veritatis iusto sint ipsam velit voluptate, minima enim, suscipit unde? Illum sint reiciendis enim dignissimos, molestias temporibus excepturi earum.
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+
+        gsap.to("#mountain_left",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds_1",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 200,
+        });
+
+        gsap.to("#clouds_2",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200,
+        });
+
+        gsap.to("#text",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+    </script>
+</body>
+</html>
