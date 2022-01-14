@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halloween / Parallax Effects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+    <div class="sec">
+        <div class="content">
+            <h2>Happy Halloweeen</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti distinctio rem recusandae nostrum obcaecati, exercitationem ab vero explicabo possimus asperiores aut minima assumenda ex vel quasi suscipit dolores similique consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae illo at aliquam non velit sapiente, porro id. Alias debitis similique totam dolore, deserunt reiciendis inventore nisi dolorum rerum, aut exercitationem quo beatae illo vitae obcaecati? Ex dicta, placeat molestiae temporibus accusantium blanditiis ratione libero est vitae unde nesciunt officiis odit ducimus facere voluptatum consectetur omnis nobis? Vel aut ullam ea quibusdam corrupti doloribus. Eaque vitae omnis fugit aliquam ipsum itaque nam nesciunt provident quod maxime consequuntur harum, vel nobis similique assumenda labore sit numquam et totam placeat illum iure ex! Maxime rerum autem voluptatem dignissimos voluptates quidem, iure quisquam vitae adipisci facere dicta similique temporibus nostrum rem ex dolorem suscipit tenetur illo laudantium commodi cupiditate, repellat quasi. Molestias voluptatum earum hic, tempore debitis ex! Ab praesentium, incidunt consequuntur nesciunt ea velit at sed quod nostrum vitae officia. Delectus mollitia culpa velit officiis possimus distinctio enim dolores omnis eveniet laborum dicta eos aspernatur, iste cupiditate sed autem ullam, libero reprehenderit dolorum dolorem voluptatem eaque sint illo consectetur. Assumenda, nemo expedita natus dignissimos explicabo sit rem quibusdam inventore. Eius enim minus eum doloribus sed quis aut ea autem, quia nihil quam dignissimos deserunt a perferendis distinctio labore odio ratione, odit nulla ipsa nam sapiente? Pariatur sint voluptatibus laboriosam, autem, et voluptates fugit nihil nisi ab dolorem atque. Neque hic, nisi quis doloremque voluptatibus eius voluptate error non quas iusto! Possimus ipsa praesentium reprehenderit illum modi magni ratione. Beatae eaque unde quis. Veritatis quasi repudiandae nulla optio a, aliquam quibusdam nobis praesentium, omnis ad ipsam exercitationem fugiat aut tenetur molestiae. Alias repellendus sunt voluptas vel. Omnis quibusdam, et id voluptates harum quae dolor provident facere similique soluta architecto laborum expedita mollitia ipsa vel. Aperiam ea, facilis veritatis ad quo libero sunt architecto ipsam odit repudiandae labore hic quidem eius reiciendis tenetur rem.
+            </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    </section>
+
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 0.5,
+            },
+            x : 1500,
+        })
+    </script>
+</body>
+</html>
